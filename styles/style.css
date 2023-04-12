@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Montserrat:wght@300;400&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    background-color: #0E1014;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*общие стили и переменные*/
+
+.container {
+    padding: 0 15px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+/*стили для приложения*/
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #0E1014;
+}
+
+.header__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header__logo {
+    display: none;
+}
+
+.header__logo-text {
+    display: none;
+    max-width: 152px;
+    margin-top: 11px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    color: #E4E5EA;
+}
+
+.header__left {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__right {
+    display: none;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header__right-tel {
+    margin-right: 46px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #E4E5EA;
+}
+
+.header-group {
+    display: flex;
+}
+
+.header-group__item:not(:last-child) {
+    margin-right: 29px;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__list-item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #E4E5EA;
+}
+
+.header__list-item:last-child {
+    display: none;
+}
+
+.header__list--item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.main {
+    position: relative;
+    margin-top: 55px;
+    background-image: url("../images/bg.png");
+    background-size: 115%;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 59px;
+}
+
+.main-left {
+    margin-bottom: 45px;
+}
+
+.main-left__header {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #E4E5EA;
+}
+
+.main-left__logo-text {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.main-left__slogan {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #E4E5EA;
+}
+
+.main-right__text {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #E4E5EA;
+}
+
+.main-right__strong {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.main-right__col {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3px
+}
+
+.main-right__list {
+    display: flex;
+}
+
+.mr__item {
+    padding-left: 15px;
+    color: #E4E5EA;
+    background-image: url("../images/line-list.png");
+    background-repeat: no-repeat;
+    background-position: left 7px;
+}
+
+.mr__item:nth-child(3) {
+    display: none;
+}
+
+.mr__header {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.mr__description {
+    display: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+}
+
+.mr__item:nth-child(n+2) {
+    margin-top: 15px;
+}
+
+.main__button {
+    display: none;
+    margin-left: auto;
+    padding: 21px 35px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #4077F3;
+    border: none;
+    text-align: center;
+    color: #E4E5EA;
+}
+
+.red-ball-small {
+    display: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 340px;
+    right: 573px;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    filter: blur(2.5px);
+    backdrop-filter: blur(2px);
+}
+
+.red-ball-big {
+    display: none;
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    position: absolute;
+    top: -126px;
+    right: 850px;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+.purple-ball-medium {
+    display: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: -209px;
+    right: 522px;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+    filter: blur(5px);
+    backdrop-filter: blur(2px);
+}
+
+.purple-light-medium {
+    display: none;
+    width: 259px;
+    height: 259px;
+    border-radius: 50%;
+    position: absolute;
+    top: -490px;
+    right: 650px;
+    background: #833AB4;
+    opacity: 0.5;
+    filter: blur(196px);
+}
+
+.red-light-medium {
+    display: none;
+    width: 311px;
+    height: 311px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    right: 1270px;
+    background: #961A1A;
+    opacity: 0.5;
+    filter: blur(196px);
+}
+
+.footer {
+    background-color: #0E1014;
+}
+
+.footer__container {
+    padding-top: 41px;
+    padding-bottom: 60px;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.footer__contacts-group {
+    margin-bottom: 30px;
+}
+
+.footer__contacts-header {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #656566;
+}
+
+.footer__contacts-lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contacts-list:nth-child(1) {
+    margin-right: 45px;
+}
+
+.footer__contacts-item {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #E4E5EA;
+}
+
+.footer-right__telephone {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E4E5EA;
+}
+
+.group-contacts {
+    margin-bottom: 13px;
+}
+
+.group-contacts__list {
+    display: flex;
+}
+
+.group-contacts__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-right__address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #E4E5EA;
+}
+
+.footer__copyright-text {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #E4E5EA;
+}
+
+.footer__copyright-politic {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: #E4E5EA;
+}
+
+
+

@@ -1,0 +1,253 @@
+@media (min-width: 1440px) {
+    .container {
+        padding: 0 70px;
+        max-width: 1280px;
+    }
+
+    .header {
+        position: relative;
+        background-color: transparent;
+    }
+
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 57px;
+        padding-bottom: 93px;
+    }
+
+    .header__logo {
+        display: flex;
+        flex-direction: column;
+        margin-right: 52px;
+    }
+
+    .header__logo-text {
+        display: block;
+        max-width: 139px;
+    }
+
+    .header__list {
+        margin-bottom: 30px;
+    }
+
+    .header__list-item {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: none;
+    }
+
+    .header__list-item:not(:last-child) {
+        margin-right: 31px;
+    }
+
+    .header__left {
+        display: flex;
+    }
+
+    .header__right {
+        display: flex;
+    }
+
+    .header__list-item:last-child {
+        display: block;
+    }
+
+    .main {
+        margin-top: 0;
+        background-image: none;
+        padding-bottom: 124px;
+    }
+
+    .main__right {
+        margin-top: 16px;
+    }
+
+    .main__container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main-left__header {
+        max-width: 360px;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .main-left__logo-text {
+        margin-bottom: 30px;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .main-left__slogan {
+        max-width: 270px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .main-right__text {
+        max-width: 299px;
+        margin-bottom: 40px;
+        text-align: right;
+    }
+
+    .main-right__strong {
+        text-transform: uppercase;
+    }
+
+    .mr__item {
+        background-image: none;
+        padding-left: 0;
+    }
+
+    .mr__header {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: right;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+    }
+
+    .col-1 {
+        flex-direction: column-reverse;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .col-2 {
+        margin-right: 0;
+    }
+
+    .mr__item {
+        margin-bottom: 30px;
+        margin-top: 0;
+        max-width: 140px;
+    }
+
+    .mr__item:nth-child(2) {
+        display: none;
+    }
+
+    .mr__item:nth-child(3) {
+        display: block;
+    }
+
+    .mr__description {
+        display: block;
+    }
+
+    .mr__item:nth-child(n+2) {
+        margin-top: 0;
+    }
+
+    .main__button {
+        display: block;
+    }
+
+    .red-ball-small {
+        display: block;
+    }
+
+    .red-ball-big {
+        display: block;
+    }
+
+    .purple-ball-medium {
+        display: block;
+    }
+
+    .purple-light-medium {
+        display: block;
+    }
+
+    .red-light-medium {
+        display: block;
+    }
+
+    .footer {
+        background-color: transparent;
+    }
+
+    .footer__contacts {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+
+    .footer__contacts-left {
+        display: flex;
+    }
+
+    .footer__contacts-header {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #656566;
+    }
+
+    .footer__contacts-item {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .footer__contacts-group:first-child {
+        margin-right: 45px;
+    }
+
+    .footer__contacts-list:nth-child(1) {
+        margin-right: 54px;
+    }
+
+    .footer__contacts-list {
+        margin-right: 52px;
+    }
+
+    .footer-right {
+        text-align: right;
+    }
+
+    .footer-right__telephone {
+        margin-bottom: 20px;
+    }
+
+    .group-contacts__list {
+        justify-content: flex-end;
+    }
+
+    .group-contacts {
+        margin-bottom: 17px;
+    }
+
+    .footer-right__address {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: right;
+    }
+
+    .footer__copyright {
+        text-align: right;
+    }
+
+    .footer__contacts-group {
+        margin-bottom: 20px;
+    }
+}
